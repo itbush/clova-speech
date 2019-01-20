@@ -48,7 +48,7 @@ describe Clova::IntentRequest do
   end
 
   let :slot do
-    intent_request.find_slot_value_by(slot_name:"pizzaType")
+    intent_request.find_slot_value_by("pizzaType")
   end
 
   context '#find_slot_value_by' do
