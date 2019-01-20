@@ -1,26 +1,26 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "clova/version"
+require "clova-speech/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "clova-speech"
-  spec.version       = Clova::VERSION
+  spec.version       = "0.1.2"
   spec.authors       = ["Isaiah Bush"]
-  spec.email         = ["itbush@cs.stanford.com, itbush2016@gmail.com"]
+  spec.email         = ["itbush@cs.stanford.com, itbush1998@gmail.com"]
 
   spec.summary       = "SDK of the LINE Clova Smart Speaker"
-  spec.description   = "Clova API - SDK of the LINE Clova Smart Speaker API for Ruby. Developed as part of an internship at LINE Corp"
+  spec.description   = "Clova API - SDK of the LINE Clova Smart Speaker API for Ruby. Developed as part of an internship at LINE Corp."
   spec.homepage      = "https://github.com/itbush/clova-speech"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  #if spec.respond_to?(:metadata)
+  #  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  #else
+  #  raise "RubyGems 2.0 or newer is required to protect against " \
+  #    "public gem pushes."
+  #end
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
