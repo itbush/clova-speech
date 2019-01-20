@@ -1,0 +1,5 @@
+require 'request/request'
+require 'request/intent_request'
+require 'request/event_request'
+require 'request/launch_request'
+require 'request/session_ended_request'
