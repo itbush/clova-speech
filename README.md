@@ -13,6 +13,8 @@ And then execute:
 $ bundle install
 
 ## Usage
+Use of this SDK assumes prior creation of a skill at the LINE Clova Dev Portal. 
+
 An example implementation of this gem, can be found in a sample skill at [Clova Calculator Skill](https://github.com/itbush/CalculatorClovaSkill). While this example utilizies Sinatra to handle HTTP requests, any method should work.
 
 
@@ -42,9 +44,14 @@ class CustomSkillName < Clova::Skill
 ``` 
 
 #### Handling Intent Requests
+In order to gain the information from an Intent Request, you must access the `slot` of the request. (Check [here](https://clova-developers.line.biz/guide/CEK/References/CEK_API.md#CustomExtIntentRequest) for more information on the structure of Intent Requests)
 
+Example: to access the information in slot `num`:
+```ruby
+request.find_slot_value_by(:num)
+```
 
-
+An simple implementation can be seen in [ClovaCalculatorSkill](https://github.com/itbush/CalculatorClovaSkill/blob/master/calculator_skill.rb)
 
 
 
